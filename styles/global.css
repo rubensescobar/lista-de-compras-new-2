@@ -1,0 +1,187 @@
+/* General Code */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--inter);
+  background: var(--bg-primary);
+}
+
+:root {
+  --bg-primary: #F4F5FB;
+  --bg-secundary: #FFFFFF;
+
+  /* COLORS */
+
+  --color-brand: #CA3884;
+  --color-brand-hover: #A52C6B;
+  --color-danger: #C93847;
+
+  /* Content */
+
+  --content-primary: #080B12;
+  --content-secondary: #374151;
+  --content-tertiary: #9CA3AF;
+  --always-white: #FFFFFF;
+
+  /* Border */
+
+  --border-primary: #D1D5DB;
+  --border-hover: #B9C2D0;
+
+  /* Tipography */
+
+  --inter: "Inter", sans-serif;
+  --title: 700 1.5/2rem;
+  --label: 600 1/1.25rem;
+  --paragraph: 500 1/1.25rem;
+  --link: 500 1rem;
+  --sora: "Sora", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 40rem;
+}
+
+/* Navegation Code */
+
+
+nav {
+display: flex;
+justify-content: center;
+padding-block: 1.25rem;
+gap: .5rem;
+}
+
+.Sora {
+  font-family: var(--sora);
+  color: var(--content-secondary);
+  font-size: 1.66rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+/* Back and ADD NEW ITEMS */
+
+.container div:nth-child(2) {
+  padding-block: 3.875rem;
+  color: var(--color-brand);
+  font-weight: 500;
+}
+
+.week-shopping {
+  color: var(--content-primary);
+  margin-bottom: 2.75rem;
+}
+
+.content-tertiary {
+  color: var(--content-tertiary);
+  font: var(--content-tertiary);
+}
+
+button {
+  color: white;
+  padding: 0 1.5rem;
+  height: 3rem;
+  border-radius: .75rem;
+  font: var(--always-white);
+  background: var(--color-brand);
+  border: none;
+  
+}
+
+input[type="text"]:first-of-type {
+
+  height: 3rem;
+  width: 450px;
+  padding: 0 1rem;
+  border-radius: .75rem;
+  border: 2px solid var(--border-primary);
+  
+}
+
+/* Checkboxes */
+
+form:nth-child(2) label {
+  display: block;
+  
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0; /* Linha entre os itens */
+  width: 100%;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.delete-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+footer p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--color-danger); 
+  border-radius: 8px; 
+}
+
+footer p span {
+  display: flex;
+  align-items: center;
+}
+
+footer p span img {
+  margin-right: 8px; 
+}
+
+.bg-red {
+  background-color: var(--color-danger);
+}
+.white {
+  color: var(--always-white);
+}
+
+footer {
+  display: none;
+}
+
+span {
+  color: var(--content-primary);
+}
+
+.item {
+  margin: 0;
+  padding: 0;
+  height: 2rem;
+  line-height: 2rem;
+  margin-top: .75rem;
+  overflow: hidden;
+}
+
+.shoppingList {
+  height: 2rem;
+}
+
