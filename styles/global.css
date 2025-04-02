@@ -172,6 +172,8 @@ footer p span img {
 
 footer {
   display: none;
+  
+  
 }
 
 .show-result {
@@ -199,7 +201,10 @@ span {
 
 
 #shoppingList {
-  height: 2rem;
-  padding-top: 2.5rem;
+  height: auto;
+  padding: 2rem 0;
+  position: relative;
+
 }
+
 

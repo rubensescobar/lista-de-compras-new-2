@@ -26,6 +26,8 @@ function addItem() {
         const deleteButton = document.createElement('button');
         deleteButton.classList.add('delete-btn');
         deleteButton.innerHTML = '<img src="./assets/icons/Frame (3).svg" alt="Deletar">';
+
+        const closeAlert = document.getElementById('close-alert');
         
         
         
@@ -34,6 +36,10 @@ function addItem() {
         deleteButton.addEventListener('click', function() {
             shoppingList.removeChild(itemDiv);
             footer.classList.add("show-result"); 
+        });
+
+        closeAlert.addEventListener('click', function() {
+            footer.classList.remove("show-result"); 
         });
 
         
@@ -52,15 +58,10 @@ function addItem() {
 
 addItemButton.addEventListener('click', addItem);
 
-// function deleteButton {
-//     try {
-//       // Aplica a classe que exibe o footer para mostrar o resultado.
-//       footer.classList.add("show-result")
-//     } catch {
-//       // Remove a classe do footer removendo ele da tela.
-//       footer.classList.remove("show-result")
-      
-//       console.log(error)
-//       alert("Não foi possível converter. Tente novamente mais tarde.")
-//     }
-//   }
+
+
+
+
+
+
+
